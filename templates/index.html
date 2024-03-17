@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/index.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <title>test</title>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      "
+    >
+      <form class="formcontainer" method="post" action="/submit">
+        <p style="font-weight: 700; font-size: 40" class="primary">
+          This is me practicing for docker yeay
+        </p>
+        <input
+          placeholder="email"
+          id="email"
+          name="email"
+          required
+          class="input"
+        />
+        <input
+          placeholder="password"
+          id="password"
+          name="password"
+          required
+          class="input"
+        />
+        <button class="button" style="margin-top: 16px" type="submit">
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
